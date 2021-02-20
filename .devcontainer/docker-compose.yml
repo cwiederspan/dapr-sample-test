@@ -36,6 +36,9 @@ services:
       # Forwards the local Docker socket to the container.
       - /var/run/docker.sock:/var/run/docker.sock
 
+      # Mount the dapr files location
+      - /c/users/chwieder/.dapr:/root/.dapr
+
     # Uncomment the next four lines if you will use a ptrace-based debuggers like C++, Go, and Rust.
     # cap_add:
     #  - SYS_PTRACE
